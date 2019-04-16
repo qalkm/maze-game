@@ -1,18 +1,18 @@
-#include <stdlib.h>			// free
-#include <stdio.h> 			// printf
-#include <time.h>			// time
-#include <conio.h>			// getch 
+#include <stdlib.h>		// free
+#include <stdio.h> 		// printf
+#include <time.h>		// time
+#include <conio.h>		// getch 
 #include "./lib/lbrnth.h"	// idx, li_solve_maze, build_lbrt,
-							// struct maze, struct dot			
+				// struct maze, struct dot			
 #include "./lib/term.h"		// move_cursor, set_attr, color_print, setw_title,
-							// setw_hw, hide_cursor, erase_chars, clrscr, gotoxy,
-							// save_curs_pos, update_curs_pos
+				// setw_hw, hide_cursor, erase_chars, clrscr, gotoxy,
+				// save_curs_pos, update_curs_pos
 
 							
 void 	print_field 	(struct maze maze);
 void 	print_esc_path	(struct maze maze);
 void 	update_footer	(struct maze maze);
-void 	new_maze		(struct maze * maze);
+void 	new_maze	(struct maze * maze);
 void 	handle_press 	(char c, struct maze * maze, int * maze_passed);
 
 int main(int argc, char * argv)
@@ -203,6 +203,6 @@ void update_footer(struct maze maze)
 	save_curs_pos();
 	gotoxy(0, FIELD.HEIGHT);
 	printf("seed: %i\tlevel: %i \tstep: %i \tq - quit, e - escape", 
-			maze.seed, maze.player.level, maze.player.step);
+		maze.seed, maze.player.level, maze.player.step);
 	update_curs_pos();
 }
