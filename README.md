@@ -1,4 +1,5 @@
 # maze-game
+![Game screenshot](images/sample.jpeg)
 
 Requirements: **mingw32**
 
