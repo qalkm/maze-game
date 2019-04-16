@@ -1,4 +1,4 @@
-#include <stdio.h> 		// printf
+#include <stdio.h> 	// printf
 #include <stdlib.h> 	// system
 #include "../term.h"	//
 
