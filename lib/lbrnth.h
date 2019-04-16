@@ -1,7 +1,7 @@
 const int 
-		ESC_PATH,
-		WALL,
-		BLANK;
+	ESC_PATH,
+	WALL,
+	BLANK;
 		
 struct FIELD {
 	const int HEIGHT, WIDTH;
