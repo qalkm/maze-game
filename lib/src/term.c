@@ -73,6 +73,3 @@ void update_curs_pos()
 {
 	printf(ESC "[u");
 }
-{
-	printf(ESC "[u");
-}
