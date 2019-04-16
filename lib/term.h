@@ -7,7 +7,7 @@
 #define B_WHITE		47
 
 void move_cursor(char direction, int lenght); 	// u - up, d - down, 
-												// l - left, r - right
+						// l - left, r - right
 void set_attr(int attr); // 0 - all attributes off
 void color_print(char * text, int color);
 void setw_title(char * title);
