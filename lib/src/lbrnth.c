@@ -1,13 +1,13 @@
 #include <strings.h> 	// memcpy
-#include <stdio.h>		// printf
+#include <stdio.h>	// printf
 #include <stdlib.h> 	// rand srand
 #include "../lbrnth.h"	// 
 
 struct FIELD FIELD = {25, 39}; // both even
 const int 
-		ESC_PATH 	= 1,
-		WALL		= -1,
-		BLANK		= 0;
+	ESC_PATH 	= 1,
+	WALL		= -1,
+	BLANK		= 0;
 
 int 	idx		(int n, int m);
 void 	build_matrix	(const struct FIELD, int * a);
